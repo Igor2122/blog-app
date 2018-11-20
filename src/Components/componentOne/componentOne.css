@@ -1,3 +1,27 @@
-.Cheese {
-   width: 200px;
+.Wrapper {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: auto;
+}
+
+.Card {
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+   width: 30%;
+}
+
+.CardImage {
+   width: 90%;
+   margin: auto;
+}
+
+
+.Card:hover {
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.Container {
+   padding: 2px 16px;
 }

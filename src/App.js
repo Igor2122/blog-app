@@ -20,7 +20,7 @@ class App extends Component {
 
       <div>
         <Layout>
-          <Component1 name={this.state.images} /> 
+          <Component1  /> 
         </Layout>
         
       </div>
