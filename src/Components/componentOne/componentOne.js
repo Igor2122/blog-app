@@ -9,12 +9,11 @@ let images = [
   'cheese.png',
   'tomato.png',
 ]
-const comp1 = () => {
+const comp1 = (props) => {
    
 
    
-
-    let output = images.map((key, i) => {
+   let output = images.map((key, i) => {
          return (
             <div className={classes.Card} key={key + i}>
                <img 
@@ -27,9 +26,12 @@ const comp1 = () => {
                </div>
             </div>
          );
-     });
+   });
 
-   //   console.log(output);
+   if(props.state == false){
+      output = '';
+   }
+   
    
    return (
       <div className={classes.Wrapper}>     
