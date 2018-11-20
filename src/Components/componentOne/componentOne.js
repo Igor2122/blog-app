@@ -7,7 +7,7 @@ return (
       <div>Componet {props.name}</div>
       <img
          className={classes.Cheese} 
-         src={require(props.name)} alt="image"/>
+         src={require(`../../${props.name}`)} alt="image"/>
    </div>
          
 );

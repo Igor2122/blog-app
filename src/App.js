@@ -5,18 +5,26 @@ import Component1 from './Components/componentOne/componentOne';
 
 class App extends Component {
 
-  state = [
-    {name: './assets/cheese.png'}
-  ]
+  state = {
+    name: 'assets/cheese.png',
+  }
+
+  showImages = (props) => {
+    const images = this.state;
+    console.log(images);
+  }
+
+  
 
   render() {
     return(
+
       <div>
         <Layout>
-          {/* <Component1 name={this.state[0].name}/> */}
-          <img
-         className={classes.Cheese} 
-         src={require(`${this.state[0].name}`)} alt="image"/>
+          <Component1 name={this.state.name} />
+          {/* <img
+            className={classes.Image} 
+            src={require(`${this.state.name}`)} alt="image"/> */}
         </Layout>
         
       </div>
@@ -25,4 +33,4 @@ class App extends Component {
   }
 }
 
-export default App;// higher order component 
+export default App;
