@@ -4,6 +4,10 @@ import classes from './componentOne.css';// eslint-disable-line no-unused-vars
 let images = [
   'cheese.png',
   'tomato.png',
+  'cheese.png',
+  'tomato.png',
+  'cheese.png',
+  'tomato.png',
 ]
 const comp1 = () => {
    

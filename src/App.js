@@ -7,10 +7,7 @@ class App extends Component {
 
   state = {
    
-    images: [
-      'cheese.png',
-      'tomato.png'
-    ],
+    
   }
 
 
@@ -22,7 +19,6 @@ class App extends Component {
         <Layout>
           <Component1  /> 
         </Layout>
-        
       </div>
     );
     
