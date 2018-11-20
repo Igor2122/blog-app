@@ -7,8 +7,17 @@ class App extends Component {
 
   state = {
    
+    images: [
+      'cheese.png',
+      'tomato.png'
+    ],
+
     imag: {
-      name: 'cheese.png'
+      name: 'cheese.png',
+      name: 'cheese.png',
+      name: 'cheese.png',
+      name: 'cheese.png',
+      name: 'cheese.png',
     }
   }
 
@@ -16,20 +25,12 @@ class App extends Component {
 
   
 
-  render(
-   
-    // showImages = (props) => {
-    //   const images = this.state;
-    //   console.log(images);
-    // }
-
-  ) {
+  render() {
     return(
 
       <div>
         <Layout>
-          <Component1 name={this.state.imag.name} />
-          
+          <Component1 name={this.state.imag} /> 
         </Layout>
         
       </div>
