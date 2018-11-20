@@ -6,25 +6,30 @@ import Component1 from './Components/componentOne/componentOne';
 class App extends Component {
 
   state = {
-    name: 'assets/cheese.png',
-  }
-
-  showImages = (props) => {
-    const images = this.state;
-    console.log(images);
+   
+    imag: {
+      name: 'cheese.png'
+    }
   }
 
   
 
-  render() {
+  
+
+  render(
+   
+    // showImages = (props) => {
+    //   const images = this.state;
+    //   console.log(images);
+    // }
+
+  ) {
     return(
 
       <div>
         <Layout>
-          <Component1 name={this.state.name} />
-          {/* <img
-            className={classes.Image} 
-            src={require(`${this.state.name}`)} alt="image"/> */}
+          <Component1 name={this.state.imag.name} />
+          
         </Layout>
         
       </div>
