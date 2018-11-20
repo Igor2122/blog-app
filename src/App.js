@@ -10,10 +10,8 @@ class App extends Component {
   }
 
   showContent = () => {
-    this.setState({showContent: true});
-    console.log(this.state.showContent);
-    console.log('clicked');
-  }
+      this.setState({showContent: true});
+    }
 
 
   render() {

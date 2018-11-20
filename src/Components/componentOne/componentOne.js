@@ -28,7 +28,7 @@ const comp1 = (props) => {
          );
    });
 
-   if(props.state == false){
+   if(props.state === false){
       output = '';
    }
    

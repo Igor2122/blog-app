@@ -5,7 +5,7 @@ const button = (props) => {
 return (
    <button 
    onClick={props.showContent}
-   className={classes.DrawBorder}>Show Resulst</button>
+   className={classes.Button}>Show Resulst</button>
 );
 }
 
